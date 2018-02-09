@@ -6,16 +6,22 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/Patient.ts" />
       <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/PaymentMethod.ts" />
       <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/Request.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/curriculumvitae.service.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/nurse.service.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/patient.service.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/paymentmethod.service.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts" />
       <change beforePath="$PROJECT_DIR$/angular-seed/package-lock.json" afterPath="$PROJECT_DIR$/angular-seed/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/app.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.component.html" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/home-page/home-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/home-page/home-page.component.html" />
-      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-edit-page/task-edit-page.component.css" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/Patient.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-edit-page/task-edit-page.component.css" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/Nurse.ts" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-edit-page/task-edit-page.component.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-edit-page/task-edit-page.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.css" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/Nurse.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.css" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/Curriculumvitae.ts" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" afterPath="" />
     </list>
@@ -217,16 +223,7 @@
               <item name="angularjs-nyrs" type="462c0819:PsiDirectoryNode" />
               <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angularjs-nyrs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angularjs-nyrs" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,7 +358,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="40" width="1201" height="668" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -375,7 +371,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26688907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26688907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
