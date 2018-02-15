@@ -1,0 +1,30 @@
+
+  .container{
+    position: relative;
+    width: 400px;
+    align-content: center;
+    background-color: transparent;
+  }
+
+  #centerbrand{
+    position: relative;
+    width: 400px;
+    height: 100px;
+  }
+  
+  #brand{
+      position: absolute;
+      width: 100px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+  }
+
+.btn-success{
+    background-color: #008CBA;
+    border: none;
+    padding: 10px 159px;
+}
+

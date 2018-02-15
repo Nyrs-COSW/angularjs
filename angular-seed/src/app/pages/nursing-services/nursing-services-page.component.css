@@ -1,0 +1,12 @@
+.container{
+    position: relative;
+    width: 700px;
+    align-content: center;
+    background-color: transparent;
+  }
+
+.btn-primary{
+    background: #0275d8;
+    width: 300px;
+    height: 100px;
+}
