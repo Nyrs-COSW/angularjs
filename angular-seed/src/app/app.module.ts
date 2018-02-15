@@ -20,15 +20,15 @@ import { SignInPageComponent } from './pages/sign-in/sign-in-page.component';
 
 import { NursingServicesPageComponent } from './pages/nursing-services/nursing-services-page.component';
 import { UsersService } from './services/users.service';
+import { NursingservicesService } from './services/nursingservices.service';
 
 
 const ROUTES = [
-  
-{ path: 'nursingservices', component: NursingServicesPageComponent , canActivate: [AuthService],},
-{ path: '', component: SignInPageComponent },
-{ path: 'home', component: HomePageComponent, canActivate: [AuthService],},
-{path: '**', component: PageNotFoundComponent}
-]
+  { path: 'nursingservices', component: NursingServicesPageComponent , canActivate: [AuthService],},
+  { path: '', component: SignInPageComponent },
+  { path: 'home', component: HomePageComponent, canActivate: [AuthService],},
+  {path: '**', component: PageNotFoundComponent}
+  ]
 
 @NgModule({
   declarations: [
@@ -56,7 +56,8 @@ const ROUTES = [
     AppDataService,
     AuthService,
     APIService,
-    UsersService
+    UsersService,
+    NursingservicesService
   ],
   bootstrap: [AppComponent]
 })
