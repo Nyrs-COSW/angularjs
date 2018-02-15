@@ -24,9 +24,9 @@ import { UsersService } from './services/users.service';
 
 const ROUTES = [
   
-{ path: 'nursingservices', component: NursingServicesPageComponent },
+{ path: 'nursingservices', component: NursingServicesPageComponent , canActivate: [AuthService],},
 { path: '', component: SignInPageComponent },
-{ path: 'home', component: HomePageComponent},
+{ path: 'home', component: HomePageComponent, canActivate: [AuthService],},
 {path: '**', component: PageNotFoundComponent}
 ]
 
