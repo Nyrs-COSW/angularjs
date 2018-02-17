@@ -7,15 +7,18 @@
         <img src="/assets/brand/brand.png" width="80" height="50">
     </a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+      <ul class="navbar-nav mr-auto nav.pills">
+        <li *ngIf="isLoggedIn()"  class="nav-item">
           <a class="nav-link" routerLinkActive="/home" routerLink="/home">Home</a>
         </li>
-        <li *ngIf="isLoggedIn()" class="nav-item">
+        <li   *ngIf="isLoggedIn()" class="nav-item">
             <a class="nav-link" routerLinkActive="/nursingservices" routerLink="/nursingservices">Nursin Services</a>
           </li>
-        <li *ngIf="isLoggedIn()" class="nav-item">
-          <a href="#" class="nav-link" (click)="signOut()">Sign Out</a>
+
+      </ul>
+      <ul class="nav justify-content-end nav-pills">
+        <li  *ngIf="isLoggedIn()" class="nav-item">
+          <a href="#" class="nav-link" (click)="signOut()"><font color="white">Sign Out</font></a>
         </li>
       </ul>
     </div>
