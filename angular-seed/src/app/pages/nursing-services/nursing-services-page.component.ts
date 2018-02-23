@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NursingservicesService } from '../../services/nursingservices.service';
-import { Nursingservices } from '../../models/nursingservices';  
+import { Nursingservices } from '../../models/nursingservices';
 
 @Component({
   selector: 'app-nursing-services-page',
@@ -15,6 +15,7 @@ export class NursingServicesPageComponent implements OnInit {
   }
 
  ngOnInit() {
+
     this.nursingservicesService.list().subscribe(todosResponse=>{
        this.nursingserviceslist = todosResponse;
     })

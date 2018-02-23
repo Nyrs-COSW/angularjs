@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 export class SignInPageComponent implements OnInit {
     public signInForm: FormGroup;
     public loginError: string;
+    public username : string;
 
   constructor(public formBuilder:FormBuilder,public usersService: UsersService,public router: Router) {
     this.signInForm = new FormGroup({
@@ -26,6 +27,9 @@ export class SignInPageComponent implements OnInit {
   }
 
   doLogin() {
+
+    this.username = this.signInForm.get('username').value;
+
     this.usersService.login(
       this.signInForm.get('username').value,
       this.signInForm.get('password').value).subscribe(loginResponse => {

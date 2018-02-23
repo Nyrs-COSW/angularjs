@@ -15,9 +15,7 @@ export class RequestService extends APIService{
 
 private resourceUrl: string = '/api/requests';
 
-private requests: Request[] = [
-    new Request(Date.now, 1,1, new Nursingservices("Maternidad","a","a","a"))
-];
+private requests: Request[] = [];
 
 constructor(
         public config: AppConfiguration,

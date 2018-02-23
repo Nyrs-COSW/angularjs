@@ -12,7 +12,9 @@ export class NursingservicesService extends APIService{
 
 private resourceUrl: string = '/api/nursingservices';
 
-private nursingservices: Nursingservices[] = [];
+private nursingservices: Nursingservices[] = [
+new Nursingservices("Mdsdfgsdfgd","a","a","a")
+];
 
 constructor(
         public config: AppConfiguration,

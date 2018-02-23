@@ -4,8 +4,16 @@
     <list default="true" id="6125d712-c9aa-4f49-ae33-5eb294e33585" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/app.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.component.html" />
-      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.html" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/app.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.component.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/models/request.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/request.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/nursing-services/nursing-services-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/nursing-services/nursing-services-page.component.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.html" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.ts" />
       <change beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/services/nursingservices.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/nursingservices.service.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts" />
+      <change beforePath="$PROJECT_DIR$/angular-seed/src/index.html" afterPath="$PROJECT_DIR$/angular-seed/src/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +24,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+            <state relative-caret-position="225">
+              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nursingservices.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/nursingservices.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/request.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="117" lean-forward="false" selection-start-line="9" selection-start-column="117" selection-end-line="9" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nursing-services-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/nursing-services/nursing-services-page.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -29,8 +77,8 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="241">
+              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -39,80 +87,40 @@
       <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="75" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="68" />
+            <state relative-caret-position="218">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding>
-                <marker date="1518707520000" expanded="true" signature="940:945" ph="..." />
+                <marker date="1519418533665" expanded="true" signature="1421:1426" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.css">
+      <file leaf-file-name="request.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="217">
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/api.service.ts">
+      <file leaf-file-name="nursingservices.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/nursingservices.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
+      <file leaf-file-name="request-page.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign-in-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-not-found.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/page-not-found/page-not-found.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/home-page/home-page.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -153,12 +161,19 @@
         <option value="$PROJECT_DIR$/angular-seed/src/app/common/auth.service.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
-        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.ts" />
-        <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/common/api.service.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/nursing-services/nursing-services-page.component.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/index.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/services/nursingservices.service.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/models/request.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.html" />
       </list>
     </option>
   </component>
@@ -186,8 +201,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,18 +242,61 @@
               <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularjs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularjs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="nursing-services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularjs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="requests-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularjs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="sign-in" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angularjs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
@@ -405,90 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/Request.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/Nurse.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/Patient.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/Curriculumvitae.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/nurse.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/patient.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/paymentmethod.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/PaymentMethod.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/curriculumvitae.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/Request.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/Nurse.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/Patient.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -637,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/config/config.interface.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -679,14 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/page-not-found/page-not-found.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -703,34 +662,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/api.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -743,28 +694,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/api.service.ts">
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/page-not-found/page-not-found.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/page-not-found/page-not-found.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/nursing-services/nursing-services-page.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/nursing-services/nursing-services-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sign-in-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/nursingservices.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/nursingservices.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/request.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="117" lean-forward="false" selection-start-line="9" selection-start-column="117" selection-end-line="9" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/nursing-services/nursing-services-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/requests-page/request-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="75" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="68" />
+        <state relative-caret-position="218">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
-            <marker date="1518707520000" expanded="true" signature="940:945" ph="..." />
+            <marker date="1519418533665" expanded="true" signature="1421:1426" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.css">
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/request.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="217">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding />
         </state>
       </provider>

@@ -22,10 +22,14 @@ import { NursingServicesPageComponent } from './pages/nursing-services/nursing-s
 import { UsersService } from './services/users.service';
 import { NursingservicesService } from './services/nursingservices.service';
 
+import { RequestPageComponent } from './pages/requests-page/request-page.component';
+import { RequestService } from './services/request.service';
+
 
 const ROUTES = [
-  { path: 'nursingservices', component: NursingServicesPageComponent , canActivate: [AuthService],},
+  { path: 'nursingservices', component: NursingServicesPageComponent, canActivate: [AuthService],},
   { path: '', component: SignInPageComponent },
+  { path: 'requests', component: RequestPageComponent, canActivate: [AuthService], },
   { path: 'home', component: HomePageComponent, canActivate: [AuthService],},
   {path: '**', component: PageNotFoundComponent}
   ]
@@ -36,7 +40,8 @@ const ROUTES = [
     HomePageComponent,
     PageNotFoundComponent,
     SignInPageComponent,
-    NursingServicesPageComponent
+    NursingServicesPageComponent,
+    RequestPageComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +62,8 @@ const ROUTES = [
     AuthService,
     APIService,
     UsersService,
-    NursingservicesService
+    NursingservicesService,
+    RequestService
   ],
   bootstrap: [AppComponent]
 })
