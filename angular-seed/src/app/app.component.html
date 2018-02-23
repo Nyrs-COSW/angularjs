@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto nav.pills">
         <li *ngIf="isLoggedIn()"  class="nav-item">
-          <a class="nav-link" routerLinkActive="/home" routerLink="/home">Home</a>
+          <a class="nav-link" routerLinkActive="/home" routerLink="/home">Inicio</a>
         </li>
         <li  *ngIf="isLoggedIn()"  class="nav-item">
-          <a class="nav-link" routerLinkActive="/nursingservices" routerLink="/nursingservices">Nursin Services</a>
+          <a class="nav-link" routerLinkActive="/nursingservices" routerLink="/nursingservices">Servicios de Enfermeria</a>
         </li>
         <li *ngIf="isLoggedIn()"   class="nav-item">
           <a class="nav-link" routerLinkActive="/requests" routerLink="/requests">Solicitudes</a>
@@ -23,7 +23,7 @@
 
       <ul class="nav justify-content-end nav-pills">
         <li  *ngIf="isLoggedIn()" class="nav-item">
-          <a href="#" class="nav-link" (click)="signOut()"><font color="white">Sign Out</font></a>
+          <a href="#" class="nav-link" (click)="signOut()"><font color="white">Salir</font></a>
         </li>
       </ul>
     </div>
