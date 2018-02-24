@@ -1,8 +1,9 @@
 .container{
     position: relative;
     width: 400px;
+    height: 400px;
     align-content: center;
-    background-color: transparent;
+    background-color: white;
   }
 
   #centerbrand{
