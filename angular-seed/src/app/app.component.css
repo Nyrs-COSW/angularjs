@@ -21,3 +21,9 @@
 div {
        padding: 0 10px;
 }
+
+.btn-primary{
+    background: white;
+    width: 150px;
+    height: 40px;
+}

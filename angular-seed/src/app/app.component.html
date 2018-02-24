@@ -38,17 +38,29 @@
 
       </ul>
 
-
-
     </div>
     <ul class="nav justify-content-end nav-pills">
         <li *ngIf="isLoggedIn()" class="nav-item">
-            <a class="nav-link" routerLinkActive="/home" routerLink="/home"><img src="/assets/images/home.svg" width="30" height="30"></a>
+            <a class="nav-link" routerLinkActive="/home" routerLink="/home"><img src="/assets/images/home.svg" width="25" height="25"></a>
         </li>
         <li  *ngIf="isLoggedIn()" class="nav-item">
             <a href="#" class="nav-link" (click)="signOut()"><font color="white">Salir</font></a>
         </li>
     </ul>
+
+
+    <ul class="nav justify-content-end nav-pills">
+        <li *ngIf="!isLoggedIn()" class="nav-item">
+            <a class="nav-link" class="btn btn-primary active" routerLinkActive="" routerLink=""><B><font color="#008CBA">Ingresa&nbsp;</font></B><img src="/assets/images/signin.svg" width="25" height="25"></a>
+            <br>
+        </li>
+        &nbsp;
+        <li *ngIf="!isLoggedIn()" class="nav-item">
+            <a class="nav-link" class="btn btn-primary active" routerLinkActive="/signup" routerLink="/signup"><B><font style="bond" color="#008CBA">Regístrate&nbsp;</font></B><img src="/assets/images/signup.svg" width="25" height="25"></a>
+        </li>
+    </ul>
+
+
   </nav>
   <div class="container">
     <router-outlet></router-outlet>
