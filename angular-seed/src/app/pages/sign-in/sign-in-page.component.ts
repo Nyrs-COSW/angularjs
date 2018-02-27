@@ -14,7 +14,7 @@ export class SignInPageComponent implements OnInit {
     public signInForm: FormGroup;
     public loginError: string;
     public username : string;
-
+public
   constructor(public formBuilder:FormBuilder,public usersService: UsersService,public router: Router) {
     this.signInForm = new FormGroup({
         username: new FormControl(),
@@ -33,6 +33,7 @@ export class SignInPageComponent implements OnInit {
     this.usersService.login(
       this.signInForm.get('username').value,
       this.signInForm.get('password').value).subscribe(loginResponse => {
+        sessionStorage.setItem("NowUser", this.signInForm.get('username').value);
         this.router.navigate(['home']);
       }, error => {
         this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');

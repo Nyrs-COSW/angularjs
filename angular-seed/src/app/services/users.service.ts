@@ -5,13 +5,17 @@ import { Http } from '@angular/http';
 import { APIService } from '.././common/api.service';
 import { AppConfiguration } from '.././common/config/app-configuration.service';
 import { AuthService } from '.././common/auth.service';
+import { Observable } from 'rxjs/Observable';
+import { User } from '../models/user';
 
 @Injectable()
 export class UsersService extends APIService {
+  
 constructor(
     public config: AppConfiguration,
     public authService: AuthService,
-    public http: Http
+    public http: Http,
+    public user : User
   ) {
     super(config, authService, http);
   }
@@ -22,5 +26,9 @@ constructor(
         this.authService.accessToken = loginResponse.accessToken;
       }
     });
+  }
+
+  profile(username:string): Observable<any>{
+    return this.get('user/profile/'+username);
   }
 }

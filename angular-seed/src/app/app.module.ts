@@ -24,14 +24,16 @@ import { NursingservicesService } from './services/nursingservices.service';
 
 import { RequestPageComponent } from './pages/requests-page/request-page.component';
 import { RequestService } from './services/request.service';
-
+import { ProfilePageComponent } from './pages/profile/profile-page.component';
+import { User } from './models/user';
 
 const ROUTES = [
   { path: 'nursingservices', component: NursingServicesPageComponent, canActivate: [AuthService],},
   { path: '', component: SignInPageComponent },
   { path: 'requests', component: RequestPageComponent, canActivate: [AuthService], },
   { path: 'home', component: HomePageComponent, canActivate: [AuthService],},
-  {path: '**', component: PageNotFoundComponent}
+  { path: '**', component: PageNotFoundComponent},
+  { path: 'profile', component: ProfilePageComponent}
   ]
 
 @NgModule({
@@ -41,7 +43,8 @@ const ROUTES = [
     PageNotFoundComponent,
     SignInPageComponent,
     NursingServicesPageComponent,
-    RequestPageComponent
+    RequestPageComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,8 @@ const ROUTES = [
     APIService,
     UsersService,
     NursingservicesService,
-    RequestService
+    RequestService,
+    User
   ],
   bootstrap: [AppComponent]
 })
