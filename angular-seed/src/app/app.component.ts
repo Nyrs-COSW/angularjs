@@ -27,6 +27,7 @@ export class AppComponent {
   }
 
   signOut() {
+    sessionStorage.removeItem("NowUser");
     this.authService.signOut();
   }
 

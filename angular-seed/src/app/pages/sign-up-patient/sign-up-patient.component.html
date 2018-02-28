@@ -1,0 +1,70 @@
+<br>
+<br>
+<div class="container">
+    <br>
+    <div id="centerbrand">
+
+        <img id="brand"  src="/assets/brand/brand.png" width="170" height="80">
+    </div>
+
+    <h2 class="text-center">Registrate en NYRS</h2>
+    <br>
+
+    <form [formGroup]="signUpPatientForm" (ngSubmit)="signUp()" novalidate>
+
+        <div class="form-group">
+            <label  for="username">Username</label>
+            <input type="text" class="form-control" id="username" formControlName="username" required>
+        </div>
+
+
+        <div class="form-group">
+            <label  for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" formControlName="firstname" required>
+        </div>
+
+        <div class="form-group">
+            <label  for="lastname">Apellido</label>
+            <input type="text" class="form-control" id="lastname" formControlName="lastname" required>
+        </div>
+
+
+        <div class="form-group">
+            <label  for="email"> Correo</label>
+            <input type="text" class="form-control" id="email" formControlName="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="priority">Password</label>
+            <input type="password" class="form-control" id="alterEgo" formControlName="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Foto</label>
+            <input type="text" class="form-control" id="image" formControlName="image" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="age">Edad</label>
+            <input type="text" class="form-control" id="age" formControlName="age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="creditCardNumber">Numero tarjeta de credito</label>
+            <input type="text" class="form-control" id="creditCardNumber" formControlName="creditCardNumber" required>
+        </div>
+
+        <div class="form-group">
+            <label for="creditCardCVV">CVV</label>
+            <input type="password" class="form-control" id="creditCardCVV" formControlName="creditCVV" required>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-success" >Registrate</button>
+
+    </form>
+</div>
+
+

@@ -5,15 +5,15 @@
     <tr>
         <th>Fecha</th>
         <th>Paciente</th>
-        <th>Enfermera</th>
+        <th>Enfermero/a</th>
         <th>Aceptado</th>
         <th>Servicio</th>
     </tr>
     </thead>
     <tr *ngFor="let request of requestlist">
         <td>{{request.date}}</td>
-        <th>{{request.patientId}}</th>
-        <th>{{request.nurseId}}</th>
+        <th>Nombre: {{request.patient.firstname}} {{request.patient.lastname}}<br>Correo: {{request.patient.email}}<br>Username: {{request.patient.username}}</th>
+        <th>{{request.nurse.firstname}} {{request.nurse.lastname}}</th>
         <th>{{request.accepted}}</th>
         <th>{{request.nursingservices.name}}: {{request.nursingservices.description}}</th>
     </tr>

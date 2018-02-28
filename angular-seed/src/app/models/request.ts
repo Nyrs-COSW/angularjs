@@ -1,16 +1,18 @@
 import {Nursingservices} from './nursingservices';
+import {User} from './User';
+
 
 export class Request {
     private date: string;
-    private nurseId: number;
-    private patientId: number;
+    private nurse: User;
+    private patient: User;
     private nursingservices: Nursingservices;
     private accepted: Boolean;
 
-    constructor(date: string, nurseId: number, patientId: number, nursingservices: Nursingservices, accepted: Boolean) {
+    constructor(date: string, nurse: User, patient: User, nursingservices: Nursingservices, accepted: Boolean) {
         this.date = date;
-        this.nurseId = nurseId;
-        this.patientId = patientId;
+        this.nurse = nurse;
+        this.patient = patient;
         this.nursingservices = nursingservices;
         this.accepted = accepted;
     }
