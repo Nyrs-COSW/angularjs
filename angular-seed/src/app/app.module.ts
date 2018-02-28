@@ -17,6 +17,7 @@ import { AuthService } from './common/auth.service';
 import { APIService } from './common/api.service';
 import { HttpModule } from '@angular/http';
 import { SignInPageComponent } from './pages/sign-in/sign-in-page.component';
+import { SignUpPatientComponent } from './pages/sign-up-patient/sign-up-patient.component';
 
 import { NursingServicesPageComponent } from './pages/nursing-services/nursing-services-page.component';
 import { UsersService } from './services/users.service';
@@ -29,6 +30,7 @@ import { RequestService } from './services/request.service';
 const ROUTES = [
   { path: 'nursingservices', component: NursingServicesPageComponent, canActivate: [AuthService],},
   { path: '', component: SignInPageComponent },
+  { path: 'signUpPatient', component: SignUpPatientComponent },
   { path: 'requests', component: RequestPageComponent, canActivate: [AuthService], },
   { path: 'home', component: HomePageComponent, canActivate: [AuthService],},
   {path: '**', component: PageNotFoundComponent}
@@ -40,8 +42,10 @@ const ROUTES = [
     HomePageComponent,
     PageNotFoundComponent,
     SignInPageComponent,
+    SignUpPatientComponent,
     NursingServicesPageComponent,
     RequestPageComponent
+
   ],
   imports: [
     BrowserModule,

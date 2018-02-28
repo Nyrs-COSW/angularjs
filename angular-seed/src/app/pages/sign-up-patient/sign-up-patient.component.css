@@ -1,27 +1,29 @@
-<br>
-<br>
-<div class="container">
-    <br>
-    <div id="centerbrand">
+.container{
+    position: relative;
+    width: 400px;
+    height: 1000px;
+    align-content: center;
+    background-color: white;
+  }
 
-            <img id="brand"  src="/assets/brand/brand.png" width="170" height="80">
-    </div>
+  #centerbrand{
+    position: relative;
+    width: 400px;
+    height: 100px;
+  }
 
-    <h2 class="text-center">Registrate en NYRS</h2>
-    <form [formGroup]="signInForm" (ngSubmit)="doLogin()" novalidate>
+  #brand{
+      position: absolute;
+      width: 100px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+  }
 
-        <div class="form-group">
-            <label  for="description">Username</label>
-            <input type="text" class="form-control" id="description" formControlName="username" required>
-        </div>
-
-        <div class="form-group">
-            <label for="priority">Password</label>
-            <input type="password" class="form-control" id="alterEgo" formControlName="password">
-        </div>
-            <button type="submit" class="btn btn-success" [disabled]="!signInForm.valid">Ingresa</button>
-
-            <p class="text-danger mt-1" *ngIf="loginError">{{loginError}}</p>
-    </form>
-</div>
-
+.btn-success{
+    background-color: #008CBA;
+    border: none;
+    padding: 10px 159px;
+}
