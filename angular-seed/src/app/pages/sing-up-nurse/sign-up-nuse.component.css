@@ -1,0 +1,27 @@
+<br>
+<br>
+<div class="container">
+    <br>
+    <div id="centerbrand">
+
+            <img id="brand"  src="/assets/brand/brand.png" width="170" height="80">
+    </div>
+
+    <h2 class="text-center">Registrate en NYRS</h2>
+    <form [formGroup]="signInForm" (ngSubmit)="doLogin()" novalidate>
+
+        <div class="form-group">
+            <label  for="description">Username</label>
+            <input type="text" class="form-control" id="description" formControlName="username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="priority">Password</label>
+            <input type="password" class="form-control" id="alterEgo" formControlName="password">
+        </div>
+            <button type="submit" class="btn btn-success" [disabled]="!signInForm.valid">Ingresa</button>
+
+            <p class="text-danger mt-1" *ngIf="loginError">{{loginError}}</p>
+    </form>
+</div>
+

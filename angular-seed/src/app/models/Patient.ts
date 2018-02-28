@@ -1,6 +1,6 @@
 export class Patient {
 
-    private username: string;
+private username: string;
 private firstname: string;
 private lastname: string;
 private image: string;
