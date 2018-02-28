@@ -26,7 +26,8 @@ constructor(
     }
 
 list(): Observable<Request[]> {
-    return this.get(this.resourceUrl);
+    var data = sessionStorage.getItem("NowUser");
+    return this.get(this.resourceUrl+"/"+data);
   }
 
 }
