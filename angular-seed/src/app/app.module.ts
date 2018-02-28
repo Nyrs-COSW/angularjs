@@ -26,7 +26,7 @@ import { NursingservicesService } from './services/nursingservices.service';
 import { RequestPageComponent } from './pages/requests-page/request-page.component';
 import { RequestService } from './services/request.service';
 import { ProfilePageComponent } from './pages/profile/profile-page.component';
-import { User } from './models/user';
+import { User } from './models/User';
 
 const ROUTES = [
   { path: 'nursingservices', component: NursingServicesPageComponent, canActivate: [AuthService],},
@@ -46,13 +46,9 @@ const ROUTES = [
     SignInPageComponent,
     SignUpPatientComponent,
     NursingServicesPageComponent,
-<<<<<<< HEAD
     RequestPageComponent,
     ProfilePageComponent
-=======
-    RequestPageComponent
 
->>>>>>> 084d1a779ef2af02a0c9ed8a9a8a9b1f1ef8303d
   ],
   imports: [
     BrowserModule,

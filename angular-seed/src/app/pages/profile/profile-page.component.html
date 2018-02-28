@@ -6,15 +6,13 @@
         <th>username</th>
         <th>firstname</th>
         <th>lastname</th>
-        <th>image</th>
         <th>email</th>
     </tr>
     </thead>
-    <tr *ngFor="">
-        <td>{{user.username}}</td>
-        <th>{{user.firstname}}</th>
-        <th>{{user.lastname}}</th>
-        <th>{{user.image}}</th>
-        <th>{{user.email}}</th>
+    <tr *ngFor="let u of user">
+        <td>{{u.username}}</td>
+        <th>{{u.firstname}}</th>
+        <th>{{u.lastname}}</th>
+        <th>{{u.email}}</th>
     </tr>
 </table>
