@@ -9,16 +9,20 @@ import { Request } from '../../models/request';
 })
 export class RequestPageComponent implements OnInit {
 
-  private requestlist: Request[] = [];
+  private requestlistTrue: Request[] = [];
+  private requestlistFalse: Request[] = [];
 
   constructor(public requestService: RequestService)  {
   }
 
  ngOnInit() {
-
-    this.requestService.list().subscribe(todosResponse=>{
-       this.requestlist = todosResponse;
+    this.requestService.listTrue().subscribe(todosResponse=>{
+       this.requestlistTrue = todosResponse;
     })
+
+    this.requestService.listFalse().subscribe(todosResponse=>{
+           this.requestlistFalse = todosResponse;
+        })
   }
 
 }

@@ -25,9 +25,14 @@ constructor(
         super(config,authService,http);
     }
 
-list(): Observable<Request[]> {
+listTrue(): Observable<Request[]> {
     var data = sessionStorage.getItem("NowUser");
-    return this.get(this.resourceUrl+"/"+data);
+    return this.get(this.resourceUrl+"/"+data+"/True");
+  }
+
+listFalse(): Observable<Request[]> {
+    var data = sessionStorage.getItem("NowUser");
+    return this.get(this.resourceUrl+"/"+data+"/False");
   }
 
 }

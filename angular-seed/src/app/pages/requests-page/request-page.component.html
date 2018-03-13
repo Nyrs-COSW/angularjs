@@ -10,11 +10,20 @@
         <th>Servicio</th>
     </tr>
     </thead>
-    <tr *ngFor="let request of requestlist">
+    <tr *ngFor="let request of requestlistTrue">
         <td>{{request.date}}</td>
         <th>Nombre: {{request.patient.firstname}} {{request.patient.lastname}}<br>Correo: {{request.patient.email}}<br>Username: {{request.patient.username}}</th>
         <th>{{request.nurse.firstname}} {{request.nurse.lastname}}</th>
-        <th>{{request.accepted}}</th>
+        <th bgcolor="#00FF00">ACEPTADO</th>
+        <th>{{request.nursingservices.name}}: {{request.nursingservices.description}}</th>
+    </tr>
+
+    <tr *ngFor="let request of requestlistFalse">
+        <td>{{request.date}}</td>
+        <th>Nombre: {{request.patient.firstname}} {{request.patient.lastname}}<br>Correo: {{request.patient.email}}<br>Username: {{request.patient.username}}</th>
+        <th>{{request.nurse.firstname}} {{request.nurse.lastname}}</th>
+        <th bgcolor="#FF0000">PENDIENTE</th>
         <th>{{request.nursingservices.name}}: {{request.nursingservices.description}}</th>
     </tr>
 </table>
+
