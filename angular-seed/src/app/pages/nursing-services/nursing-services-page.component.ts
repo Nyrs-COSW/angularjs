@@ -21,4 +21,7 @@ export class NursingServicesPageComponent implements OnInit {
     })
   }
 
+  saveService(name: string){
+    sessionStorage.setItem("nursingService", name);
+  }
 }

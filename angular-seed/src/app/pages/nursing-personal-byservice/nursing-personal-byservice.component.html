@@ -1,0 +1,20 @@
+<br>
+<h2  background="/assets/images/fondoblanco.png">Personal de Enfermeria</h2>
+<table class="table" background="/assets/images/fondoblanco.png">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Experiencia</th>
+        <th>Años</th>
+
+    </tr>
+    </thead>
+    <tr *ngFor="let nurse of nursingpersonaltlist">
+        <td>{{nurse.firstname}} {{nurse.lastname}}</td>
+        <td>{{nurse.experience}}</td>
+        <td>{{nurse.years}} años de experincia</td>
+        <td><a (click)="showProfile()" routerLinkActive="/" routerLink="/"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">VER PERFIL</a></td>
+
+    </tr>
+
+</table>

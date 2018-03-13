@@ -20,6 +20,8 @@ import { SignInPageComponent } from './pages/sign-in/sign-in-page.component';
 import { SignUpPatientComponent } from './pages/sign-up-patient/sign-up-patient.component';
 import { SignUpNurseComponent } from './pages/sign-up-nurse/sign-up-nurse.component';
 import { SignUpButtonsComponent } from './pages/sign-up-buttons/sign-up-buttons.component';
+import { NursingPersonalByServiceComponent } from './pages/nursing-personal-byservice/nursing-personal-byservice.component';
+
 
 import { NursingServicesPageComponent } from './pages/nursing-services/nursing-services-page.component';
 import { UsersService } from './services/users.service';
@@ -34,9 +36,10 @@ const ROUTES = [
   { path: '', component: SignInPageComponent },
   { path: 'signupbuttons', component: SignUpButtonsComponent },
   { path: 'signUpPatient', component: SignUpPatientComponent },
+  { path: 'nursingPersonalByService', component: NursingPersonalByServiceComponent , canActivate: [AuthService],},
   { path: 'signUpNurse', component: SignUpNurseComponent },
-  { path: 'requests', component: RequestPageComponent},
-  { path: 'home', component: HomePageComponent, canActivate: [AuthService],},
+  { path: 'requests', component: RequestPageComponent, canActivate: [AuthService],},
+  { path: 'home', component: HomePageComponent },
   {path: '**', component: PageNotFoundComponent}
   ]
 
@@ -50,7 +53,8 @@ const ROUTES = [
     SignUpNurseComponent,
     NursingServicesPageComponent,
     RequestPageComponent,
-    SignUpButtonsComponent
+    SignUpButtonsComponent,
+    NursingPersonalByServiceComponent
   ],
   imports: [
     BrowserModule,

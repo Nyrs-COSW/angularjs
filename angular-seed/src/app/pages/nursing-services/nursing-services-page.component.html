@@ -2,7 +2,7 @@
   <br>
   <div *ngFor="let nursingservices of nursingserviceslist" class="col-md-4 col-sm-6 col-12">
     <br>
-    <a href="nursesbyservice+{{nursingservices.name}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">
+    <a (click)="saveService(nursingservices.name)" routerLinkActive="/nursingPersonalByService" routerLink="/nursingPersonalByService"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">
       <img src={{nursingservices.image}} width="70" height="70"> {{nursingservices.name}}</a>
   </div>
 </div>
