@@ -8,12 +8,15 @@ export class Request {
     private patient: User;
     private nursingservices: Nursingservices;
     private accepted: Boolean;
+    private code: string;
 
-    constructor(date: string, nurse: User, patient: User, nursingservices: Nursingservices, accepted: Boolean) {
+    constructor(date: string, nurse: User, patient: User, nursingservices: Nursingservices, accepted: Boolean, code: string) {
         this.date = date;
         this.nurse = nurse;
         this.patient = patient;
         this.nursingservices = nursingservices;
         this.accepted = accepted;
+        this.code = code;
     }
+
 }

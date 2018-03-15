@@ -60,9 +60,16 @@
             <input type="text" class="form-control" id="years" formControlName="years" required>
         </div>
 
+        <label>Porfavor de la siguiente lista selecciona los servicios en los que tengas experiencia</label>
 
+        <p>Maternidad<input type="checkbox" class="form-control" id="Maternidad" formControlName="Maternidad" value="Maternidad"> </p>
+        <p>Post Operatorio<input type="checkbox" class="form-control" id="PostOperatorio" formControlName="PostOperatorio" value="PostOperatorio"> </p>
+        <p>Transplantes<input type="checkbox" class="form-control" id="Transplantes" formControlName="Transplantes" value="Transplantes"> </p>
+        <p>Terapia<input type="checkbox" class="form-control" id="Terapia" formControlName="Terapia" value="Terapia"> </p>
+        <p>Adulto Mayor<input type="checkbox" class="form-control" id="AdultoMayor" formControlName="AdultoMayor" value="AdultoMayor"> </p>
+        <p>Cuidados Paliativos<input type="checkbox" class="form-control" id="Paliativos" formControlName="Paliativos" value="Paliativos"> </p>
 
-        <button type="submit" class="btn btn-success" >Registrate</button>
+        <button type="submit" class="btn btn-success" [disabled]="!signUpNurseForm.valid" >Registrate</button>
 
     </form>
 </div>
