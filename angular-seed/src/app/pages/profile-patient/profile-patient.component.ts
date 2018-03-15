@@ -21,11 +21,11 @@ export class ProfilePatient implements OnInit {
     }
 
     ngOnInit() {
-        console.log("ENTREEE")
+
         var data= sessionStorage.getItem("NowUser");
         this.userService.profilePatient(data).subscribe(todosResponse=>{
                 this.profilePatient= todosResponse;
-                console.log(this.profilePatient)
+
                 this.router.navigate(['profilePatient']);
 
         })

@@ -39,7 +39,6 @@ constructor(
     return this.post(this.resourceNUrl,new Nurse(username,firstname, lastname, image, email, password, age, experience, years));
     }
     profilePatient(username:string):Observable<Patient>{
-        console.log(username+" Entreeeeeeeeeeeee")
         return this.get(this.resourceUrl+"/"+username);
 
     }
