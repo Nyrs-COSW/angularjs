@@ -13,7 +13,7 @@ import { Request } from '../models/request';
 @Injectable()
 export class RequestUsersService extends APIService{
 
-private resourceUrl: string = '/api/requests';
+private resourceUrl: string = '/requestsUsers';
 
 private requests: Request[] = [];
 

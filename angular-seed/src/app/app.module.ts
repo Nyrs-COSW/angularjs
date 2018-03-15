@@ -61,7 +61,8 @@ const ROUTES = [
     RequestPageComponent,
     RequestPageUsersComponent,
     SignUpButtonsComponent,
-    NursingPersonalByServiceComponent
+   NursingPersonalByServiceComponent,
+
   ],
   imports: [
     BrowserModule,

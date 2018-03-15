@@ -12,15 +12,15 @@ export class RequestPageUsersComponent implements OnInit {
   private requestlistTrue: Request[] = [];
   private requestlistFalse: Request[] = [];
 
-  constructor(public requestServiceUsers: RequestUsersService)  {
+  constructor(public requestUsersService: RequestUsersService)  {
   }
 
  ngOnInit() {
-    this.requestServiceUsers.listTrue().subscribe(todosResponse=>{
+    this.requestUsersService.listTrue().subscribe(todosResponse=>{
        this.requestlistTrue = todosResponse;
     })
 
-    this.requestServiceUsers.listFalse().subscribe(todosResponse=>{
+    this.requestUsersService.listFalse().subscribe(todosResponse=>{
            this.requestlistFalse = todosResponse;
         })
   }
