@@ -37,8 +37,13 @@
             </div>
 
       </ul>
-
     </div>
+    <ul class="nav justify-content-end nav-pills">
+        <li  *ngIf="isLoggedIn()" class="nav-item">
+            <a href="#" class="nav-link" routerLinkActive="/profilePatient" routerLink="/profilePatient"><font color="white">Profile</font></a>
+        </li>
+    </ul>
+
     <ul class="nav justify-content-end nav-pills">
         <li *ngIf="isLoggedIn()" class="nav-item">
             <a class="nav-link" routerLinkActive="/home" routerLink="/home"><img src="/assets/images/home.svg" width="25" height="25"></a>

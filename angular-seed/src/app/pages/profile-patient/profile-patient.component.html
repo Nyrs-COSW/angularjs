@@ -1,0 +1,37 @@
+<br>
+<br>
+<div class="container">
+    <br>
+    <div id="centerbrand">
+
+        <img id="brand"  src="/assets/brand/brand.png" width="170" height="80">
+    </div>
+
+    <h2 class="text-center">Profile</h2>
+    <br>
+        <tr *ngIf="profilePatient">
+
+        <div>
+            <label>Username</label>
+            <p *ngIf="profilePatient">{{profilePatient.username}}</p>
+            <label>Nombre</label>
+            <h1>{{profilePatient.firstname}}</h1>
+            <label>Apellido</label>
+            <h1>{{profilePatient.lastname}}</h1>
+            <label> Correo</label>
+            <h1>{{profilePatient.email}}</h1>
+            <label>Password</label>
+            <h1>{{profilePatient.password}}</h1>
+            <label>Edad</label>
+            <h1>{{profilePatient.age}}</h1>
+            <label>Numero tarjeta de credito</label>
+            <h1>{{profilePatient.creditCardNumber}}</h1>
+            <label>CVV</label>
+            <h1>{{profilePatient.creditCVV}}</h1>
+        </div>
+
+        </tr>
+
+        <a  routerLinkActive="/home" routerLink="/home"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> Home </a>
+
+</div>

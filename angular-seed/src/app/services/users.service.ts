@@ -7,6 +7,8 @@ import {AppConfiguration}from '.././common/config/app-configuration.service';
 import {AuthService}from '.././common/auth.service';
 import {Patient} from '.././models/Patient';
 import {Nurse} from '.././models/Nurse';
+import {Observable} from 'rxjs/Observable';
+
 @Injectable()
 export class UsersService extends APIService {
 
@@ -35,6 +37,11 @@ constructor(
     }
     signUpNurse(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:string, experience:string, years: string) {
     return this.post(this.resourceNUrl,new Nurse(username,firstname, lastname, image, email, password, age, experience, years));
+    }
+    profilePatient(username:string):Observable<Patient>{
+        console.log(username+" Entreeeeeeeeeeeee")
+        return this.get(this.resourceUrl+"/"+username);
+
     }
 
 
