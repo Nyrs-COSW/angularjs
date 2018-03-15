@@ -4,3 +4,9 @@ h2{
         align-content: center;
         text-align: center;
 }
+
+.btn-primary{
+    background: #0275d8;
+    width: 200px;
+    height: 50px;
+}

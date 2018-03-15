@@ -35,4 +35,9 @@ listFalse(): Observable<Request[]> {
     return this.get(this.resourceUrl+"/"+data+"/False");
   }
 
+getRequest(code: string): Observable<Request> {
+    var data = sessionStorage.getItem("requestCode");
+    return this.get(this.resourceUrl+"/"+code);
+  }
+
 }
