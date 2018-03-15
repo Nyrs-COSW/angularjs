@@ -2,6 +2,8 @@ import{Component, OnInit}from '@angular/core';
 import {FormGroup, FormBuilder}from '@angular/forms';
 import {UsersService}from '../../services/users.service';
 import {Router}from '@angular/router';
+import { NursingservicesService } from '../../services/nursingservices.service';
+import { Nursingservices } from '../../models/nursingservices';
 
 @Component({
   selector: 'app-sign-up-nurse',
@@ -11,8 +13,9 @@ import {Router}from '@angular/router';
 export class SignUpNurseComponent implements OnInit {
 
     private signUpNurseForm: FormGroup;
+    private nursingserviceslist: Nursingservices[] = [];
 
-    constructor(
+    constructor(public nursingservicesService: NursingservicesService,
                 public userService: UsersService,
                 public formBuilder: FormBuilder,
                 public router: Router,) {
@@ -29,9 +32,19 @@ export class SignUpNurseComponent implements OnInit {
             password: '',
             age: '',
             experience: '',
-            years:''
+            years:'',
+            Maternidad:'',
+            PostOperatorio:'',
+            Transplantes:'',
+            Terapia:'',
+            AdultoMayor:'',
+            Paliativos:'',
+
         });
 
+        this.nursingservicesService.list().subscribe(todosResponse=>{
+           this.nursingserviceslist = todosResponse;
+        })
     }
 
     signUp(){
@@ -53,6 +66,7 @@ export class SignUpNurseComponent implements OnInit {
             })
 
     }
+
 
 }
 
