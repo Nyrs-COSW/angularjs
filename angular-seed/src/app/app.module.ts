@@ -23,12 +23,17 @@ import { SignUpButtonsComponent } from './pages/sign-up-buttons/sign-up-buttons.
 import { NursingPersonalByServiceComponent } from './pages/nursing-personal-byservice/nursing-personal-byservice.component';
 
 
+
 import { NursingServicesPageComponent } from './pages/nursing-services/nursing-services-page.component';
 import { UsersService } from './services/users.service';
 import { NursingservicesService } from './services/nursingservices.service';
 
+
+
 import { RequestPageComponent } from './pages/requests-page/request-page.component';
 import { RequestService } from './services/request.service';
+import { RequestPageUsersComponent } from './pages/requests-page-users/request-page.users.component';
+import { RequestUsersService } from './services/request.users.service';
 
 
 const ROUTES = [
@@ -39,6 +44,7 @@ const ROUTES = [
   { path: 'nursingPersonalByService', component: NursingPersonalByServiceComponent , canActivate: [AuthService],},
   { path: 'signUpNurse', component: SignUpNurseComponent },
   { path: 'requests', component: RequestPageComponent, canActivate: [AuthService],},
+  { path: 'requestsUsers', component: RequestPageUsersComponent, canActivate: [AuthService],},
   { path: 'home', component: HomePageComponent },
   {path: '**', component: PageNotFoundComponent}
   ]
@@ -53,6 +59,7 @@ const ROUTES = [
     SignUpNurseComponent,
     NursingServicesPageComponent,
     RequestPageComponent,
+    RequestPageUsersComponent,
     SignUpButtonsComponent,
     NursingPersonalByServiceComponent
   ],
@@ -76,7 +83,8 @@ const ROUTES = [
     APIService,
     UsersService,
     NursingservicesService,
-    RequestService
+    RequestService,
+    RequestUsersService,
   ],
   bootstrap: [AppComponent]
 })
