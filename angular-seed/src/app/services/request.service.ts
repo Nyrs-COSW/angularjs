@@ -40,4 +40,9 @@ getRequest(code: string): Observable<Request> {
     return this.get(this.resourceUrl+"/"+code);
   }
 
+  acceptRequest(code: string) {
+    return this.post(this.resourceUrl+"/accepet/"+code, code);
+
+  }
+
 }

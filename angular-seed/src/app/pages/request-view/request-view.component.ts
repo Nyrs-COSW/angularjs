@@ -22,4 +22,14 @@ export class RequestViewPageComponent implements OnInit {
         })
 
   }
+
+
+  acceptRequest(code: string){
+        this.requestService.acceptRequest( code ).subscribe(response => {
+                this.router.navigate(['/requests']);
+            }, error => {
+                console.log('Error Posting in: ' + (error && error.message ? error.message : ''));
+            })
+  }
+
 }
