@@ -1,1 +1,22 @@
-<p *ngIf="request">La solicitud es la numero: {{request.code}} (Despues arreglo esta vista Att. Alejandro)</p>
+<br>
+<br>
+<div class="container">
+    <br>
+    <h2 class="text-center">Solicitud</h2>
+    <br>
+        <div>
+            <p *ngIf="request">Solicitud número: {{request.code}}</p>
+            <label>Paciente</label>
+            <h1 *ngIf="request">{{request.patient.firstname}} {{request.patient.lastname}}</h1>
+            <label>Servicio</label>
+            <h1 *ngIf="request">{{request.nursingservices.name}}</h1>
+            <label>Fecha</label>
+            <h1 *ngIf="request">{{request.date}}</h1>
+        </div>
+    <div>
+
+        <a  routerLinkActive="/home" routerLink="/home"  class="btn btn-success" role="button" aria-pressed="true"> Aceptar </a>
+
+    </div>
+
+</div>

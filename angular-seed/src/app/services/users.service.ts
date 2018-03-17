@@ -33,7 +33,7 @@ constructor(
   }
 
     signUpPatient(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:number, creditCardNumber:number, creditCVV: number) {
-    return this.post(this.resourceUrl,new Patient(username,firstname, lastname, image, email, password, age, creditCardNumber, creditCVV, "patient"));
+    return this.post(this.resourceUrl,new Patient(username,firstname, lastname, image, email, password, age, creditCardNumber, creditCVV));
     }
 
     signUpNurse(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:string, experience:string, years: string) {
@@ -42,7 +42,5 @@ constructor(
 
     profilePatient(username:string):Observable<Patient>{
         return this.get(this.resourceUrl+"/"+username);
-
     }
-
 }

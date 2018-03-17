@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 //Nuevos imports
 import { Router } from '@angular/router';
 import { AuthService } from './common/auth.service';
+import { UsersService } from './services/users.service';
+import { Patient } from './models/Patient';
 
 @Component({
   selector: 'app-root',
@@ -16,12 +18,14 @@ export class AppComponent {
 
   constructor(
     public authService: AuthService,
-    public router: Router
+    public router: Router,
+    public usersServices: UsersService
   ) {
     if (!this.authService.isLoggedIn()) {
       this.router.navigate(['/']);
     }
     else{
+        this.usernameButton = sessionStorage.getItem("NowUser");
         this.router.navigate(['/home']);
     }
 
@@ -33,12 +37,6 @@ export class AppComponent {
 
   isLoggedIn() {
     return this.authService.isLoggedIn();
-  }
-
-  isNurse() {
-  }
-
-  isPatient(){
   }
 
   signOut() {
