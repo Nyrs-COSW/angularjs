@@ -9,8 +9,9 @@ private password:string;
 private age: number;
 private creditCardNumber: number;
 private creditCVV: number;
+private role: string;
 
-constructor(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:number, creditCardNumber:number, creditCVV: number) {
+constructor(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:number, creditCardNumber:number, creditCVV: number, role: string) {
         this.username=username;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -20,6 +21,13 @@ constructor(username:string,firstname: string, lastname: string, image: string, 
         this.age=age;
         this.creditCardNumber=creditCardNumber;
         this.creditCVV=creditCVV;
+        this.role=role;
 
         }
+
+  public get getRole(): string {
+    return this.role;
+  }
+
 }
+

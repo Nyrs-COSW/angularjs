@@ -12,6 +12,7 @@ import { AuthService } from './common/auth.service';
 
 export class AppComponent {
   title = 'app';
+  public usernameButton: string;
 
   constructor(
     public authService: AuthService,
@@ -20,10 +21,24 @@ export class AppComponent {
     if (!this.authService.isLoggedIn()) {
       this.router.navigate(['/']);
     }
+    else{
+        this.router.navigate(['/home']);
+    }
+
+  }
+
+  public set setUsername(unButton: string) {
+    this.usernameButton = unButton;
   }
 
   isLoggedIn() {
     return this.authService.isLoggedIn();
+  }
+
+  isNurse() {
+  }
+
+  isPatient(){
   }
 
   signOut() {

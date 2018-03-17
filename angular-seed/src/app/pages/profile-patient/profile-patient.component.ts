@@ -17,13 +17,13 @@ export class ProfilePatient implements OnInit {
 
     constructor(public userService: UsersService,public formBuilder: FormBuilder,public router: Router,) {
 
-
     }
 
     ngOnInit() {
 
         var data= sessionStorage.getItem("NowUser");
         this.userService.profilePatient(data).subscribe(todosResponse=>{
+
                 this.profilePatient= todosResponse;
 
                 this.router.navigate(['profilePatient']);
