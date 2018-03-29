@@ -27,3 +27,12 @@ div {
     width: 150px;
     height: 40px;
 }
+
+span{
+    cursor: pointer;
+}
+
+span:hover, a:hover{
+    transition-duration: 0.4s;
+    opacity: 0.4;
+}

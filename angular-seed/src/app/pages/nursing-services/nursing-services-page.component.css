@@ -9,4 +9,14 @@
     background: #0275d8;
     width: 300px;
     height: 100px;
+    box-shadow: 10px 10px 30px #999;
+}
+
+
+.btn-primary:hover{
+    background: white;
+    width: 310px;
+    height: 110px;
+    color: black;
+
 }

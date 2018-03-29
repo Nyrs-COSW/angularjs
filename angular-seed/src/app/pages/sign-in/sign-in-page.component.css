@@ -28,3 +28,8 @@
     padding: 10px 159px;
 }
 
+.btn-success:hover{
+    transition-duration: 0.4s;
+    opacity: 0.7;
+}
+

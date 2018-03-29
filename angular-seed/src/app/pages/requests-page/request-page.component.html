@@ -29,7 +29,7 @@
         <th>{{request.nurse.firstname}} {{request.nurse.lastname}}</th>
         <td>{{request.description}}</td>
         <th>{{request.nursingservices.name}}: {{request.nursingservices.description}}</th>
-        <th bgcolor="#FF0000">PENDIENTE<a (click)="saveRequestCode(request.code)" routerLinkActive="/requestsview" routerLink="/requestsview"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Revisar</a></th>
+        <th >PENDIENTE<a (click)="saveRequestCode(request.code)" routerLinkActive="/requestsview" routerLink="/requestsview"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Revisar</a></th>
     </tr>
 </table>
 
