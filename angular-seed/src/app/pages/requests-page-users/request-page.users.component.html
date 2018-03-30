@@ -1,0 +1,32 @@
+<br>
+<h2  background="/assets/images/fondoblanco.png">Solicitudes</h2>
+<table class="table" background="/assets/images/fondoblanco.png">
+    <thead>
+    <tr>
+        <th>Codigo</th>
+        <th>Fecha</th>
+        <th>Paciente</th>
+        <th>Enfermero/a</th>
+        <th>Aceptado</th>
+        <th>Servicio</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let request of requestlistTrue">
+        <td>{{request.code}}</td>
+        <td>{{request.date}}</td>
+        <th>Nombre: {{request.patient.firstname}} {{request.patient.lastname}}<br>Correo: {{request.patient.email}}<br>Username: {{request.patient.username}}</th>
+        <th>{{request.nurse.firstname}} {{request.nurse.lastname}}</th>
+        <th bgcolor="#00FF00">ACEPTADO</th>
+        <th>{{request.nursingservices.name}}: {{request.nursingservices.description}}</th>
+    </tr>
+
+    <tr *ngFor="let request of requestlistFalse">
+        <td>{{request.code}}</td>
+        <td>{{request.date}}</td>
+        <th>Nombre: {{request.patient.firstname}} {{request.patient.lastname}}<br>Correo: {{request.patient.email}}<br>Username: {{request.patient.username}}</th>
+        <th>{{request.nurse.firstname}} {{request.nurse.lastname}}</th>
+        <th bgcolor="#FF0000">PENDIENTE</th>
+        <th>{{request.nursingservices.name}}: {{request.nursingservices.description}}</th>
+    </tr>
+</table>
+
