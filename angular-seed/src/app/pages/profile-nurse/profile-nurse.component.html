@@ -9,25 +9,23 @@
 
     <h2 class="text-center">Perfil</h2>
     <br>
-        <tr *ngIf="profilePatient">
+        <tr *ngIf="profileNurse">
 
         <div>
             <label>Username</label>
-            <p *ngIf="profilePatient">{{profilePatient.username}}</p>
+            <p *ngIf="profileNurse">{{profileNurse.username}}</p>
             <label>Nombre</label>
-            <h1>{{profilePatient.firstname}}</h1>
+            <h1>{{profileNurse.firstname}}</h1>
             <label>Apellido</label>
-            <h1>{{profilePatient.lastname}}</h1>
+            <h1>{{profileNurse.lastname}}</h1>
             <label> Correo</label>
-            <h1>{{profilePatient.email}}</h1>
+            <h1>{{profileNurse.email}}</h1>
             <label>Password</label>
-            <h1 type="password">{{profilePatient.password}}</h1>
+            <h1 type="password">{{profileNurse.password}}</h1>
             <label>Edad</label>
-            <h1>{{profilePatient.age}}</h1>
-            <label>Numero tarjeta de credito</label>
-            <h1>{{profilePatient.creditCardNumber}}</h1>
-            <label>CVV</label>
-            <h1>{{profilePatient.creditCVV}}</h1>
+            <h1>{{profileNurse.age}}</h1>
+            <label>Experience</label>
+            <h1>{{profileNurse.experience}}</h1>
         </div>
 
         </tr>

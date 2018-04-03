@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { AuthService } from './common/auth.service';
 import { UsersService } from './services/users.service';
 import { Patient } from './models/Patient';
+import { error } from 'util';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { Patient } from './models/Patient';
 export class AppComponent {
   title = 'app';
   public usernameButton: string;
+  public role: string;
 
   constructor(
     public authService: AuthService,
@@ -42,6 +44,14 @@ export class AppComponent {
   signOut() {
     sessionStorage.removeItem("NowUser");
     this.authService.signOut();
+  }
+  roleUser(){
+    var data = sessionStorage.getItem("Role");
+    if(data == "patient"){
+      this.router.navigate(["/profilePatient"]);
+    }else{
+      this.router.navigate(["/profileNurse"])
+    }
   }
 
 

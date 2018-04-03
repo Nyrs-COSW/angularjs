@@ -15,12 +15,14 @@ export class SignInPageComponent implements OnInit {
     public signInForm: FormGroup;
     public loginError: string;
     public username : string;
+    public role : string;
 
   constructor(public formBuilder:FormBuilder,public usersService: UsersService, public router: Router,
                 public appComponent: AppComponent) {
     this.signInForm = new FormGroup({
         username: new FormControl(),
-        password: new FormControl()
+        password: new FormControl(),
+        role: new FormControl()
     });
 
   }
@@ -36,6 +38,7 @@ export class SignInPageComponent implements OnInit {
       this.signInForm.get('password').value).subscribe(loginResponse => {
         sessionStorage.setItem("NowUser", this.signInForm.get('username').value);
         this.appComponent.setUsername = sessionStorage.getItem("NowUser");
+        sessionStorage.setItem("Role", this.signInForm.get("role").value);
         this.router.navigate(['home']);
       }, error => {
         this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');
