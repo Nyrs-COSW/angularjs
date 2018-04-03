@@ -8,12 +8,14 @@ import {AuthService}from '.././common/auth.service';
 import {Patient} from '.././models/Patient';
 import {Nurse} from '.././models/Nurse';
 import {Observable} from 'rxjs/Observable';
+import { Response } from '@angular/http/src/static_response';
 
 @Injectable()
 export class UsersService extends APIService {
 
 private resourceUrl: string = 'user/patient';
 private resourceNUrl: string = 'user/nurse';
+public role : string;
 
 constructor(
     public config: AppConfiguration,
@@ -42,5 +44,8 @@ constructor(
 
     profilePatient(username:string):Observable<Patient>{
         return this.get(this.resourceUrl+"/"+username);
+    }
+    profileNurse(username:string):Observable<Nurse>{
+      return this.get(this.resourceNUrl+"/"+username);
     }
 }
