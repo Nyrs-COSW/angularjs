@@ -39,11 +39,10 @@ import { ProfileNurse } from './pages/profile-nurse/profile-nurse.component';
 import { RequestPageUsersComponent } from './pages/requests-page-users/request-page.users.component';
 import { RequestUsersService } from './services/request.users.service';
 import { EditPatientComponent } from './pages/profile-patient-edit/profile-patient-edit.component';
-<<<<<<< HEAD
 import { CreateRequest } from './pages/create-request/create-request.component';
-=======
+
 import { EditNurseComponent } from './pages/profile-nurse-edit/profile-nurse-edit.component';
->>>>>>> 87950b212962fbbb9ccb83b48e9a82c45b35d697
+
 
 
 const ROUTES = [
@@ -60,11 +59,8 @@ const ROUTES = [
   { path: 'profilePatient', component: ProfilePatient },
   { path: 'profileNurse', component: ProfileNurse},
   { path: 'editPatient', component: EditPatientComponent},
-<<<<<<< HEAD
   { path: 'createRequest', component: CreateRequest},
-=======
   { path: 'editNurse', component: EditNurseComponent},
->>>>>>> 87950b212962fbbb9ccb83b48e9a82c45b35d697
   {path: '**', component: PageNotFoundComponent},
 
   ]
@@ -86,13 +82,9 @@ const ROUTES = [
     ProfileNurse,
     RequestViewPageComponent,
    NursingPersonalByServiceComponent,
-<<<<<<< HEAD
    CreateRequest,
-   EditPatientComponent
-=======
    EditPatientComponent,
    EditNurseComponent
->>>>>>> 87950b212962fbbb9ccb83b48e9a82c45b35d697
   ],
   imports: [
     BrowserModule,
