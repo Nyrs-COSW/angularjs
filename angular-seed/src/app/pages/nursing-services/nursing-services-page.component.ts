@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NursingservicesService } from '../../services/nursingservices.service';
 import { Nursingservices } from '../../models/nursingservices';
 
+
 @Component({
   selector: 'app-nursing-services-page',
   templateUrl: './nursing-services-page.component.html',

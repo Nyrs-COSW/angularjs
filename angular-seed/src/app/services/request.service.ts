@@ -45,4 +45,10 @@ getRequest(code: string): Observable<Request> {
 
   }
 
+
+  createRequest(description: string){
+    console.log("entre al metodo de mierda");
+    return this.get(this.resourceUrl+"/create/"+description);
+  }
+
 }

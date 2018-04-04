@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NursingservicesService } from '../../services/nursingservices.service';
 import { Nurse } from '../../models/Nurse';
+import {Router}from '@angular/router';
 
 @Component({
   selector: 'app-nursing-personal-byservice',
@@ -11,7 +12,7 @@ export class NursingPersonalByServiceComponent implements OnInit {
 
     private nursingpersonaltlist: Nurse[] = [];
 
-  constructor(public nursingservicesService: NursingservicesService) { }
+   constructor(public nursingservicesService: NursingservicesService, public router: Router) { }
 
   ngOnInit() {
     var data = sessionStorage.getItem("nursingService");
@@ -20,7 +21,9 @@ export class NursingPersonalByServiceComponent implements OnInit {
         })
   }
 
-  showProfile(){
+  showProfile(username : string){
+      sessionStorage.setItem("nurseUser", username );
+      this.router.navigate(['/createRequest']);
     }
 
 }

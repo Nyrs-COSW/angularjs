@@ -39,6 +39,7 @@ import { ProfileNurse } from './pages/profile-nurse/profile-nurse.component';
 import { RequestPageUsersComponent } from './pages/requests-page-users/request-page.users.component';
 import { RequestUsersService } from './services/request.users.service';
 import { EditPatientComponent } from './pages/profile-patient-edit/profile-patient-edit.component';
+import { CreateRequest } from './pages/create-request/create-request.component';
 
 
 const ROUTES = [
@@ -55,6 +56,7 @@ const ROUTES = [
   { path: 'profilePatient', component: ProfilePatient },
   { path: 'profileNurse', component: ProfileNurse},
   { path: 'editPatient', component: EditPatientComponent},
+  { path: 'createRequest', component: CreateRequest},
   {path: '**', component: PageNotFoundComponent},
 
   ]
@@ -76,6 +78,7 @@ const ROUTES = [
     ProfileNurse,
     RequestViewPageComponent,
    NursingPersonalByServiceComponent,
+   CreateRequest,
    EditPatientComponent
   ],
   imports: [

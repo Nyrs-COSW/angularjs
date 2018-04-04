@@ -13,7 +13,7 @@
         <td>{{nurse.firstname}} {{nurse.lastname}}</td>
         <td>{{nurse.experience}}</td>
         <td>{{nurse.years}} años de experiencia</td>
-        <td><a (click)="showProfile()" routerLinkActive="/" routerLink="/"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">VER PERFIL</a></td>
+        <td><a (click)="showProfile(nurse.username)" routerLinkActive="/" routerLink="/"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">VER PERFIL</a></td>
 
     </tr>
 

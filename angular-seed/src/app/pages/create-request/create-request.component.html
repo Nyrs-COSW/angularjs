@@ -1,0 +1,40 @@
+<br>
+<br>
+<div class="container">
+    <br>
+    <div id="centerbrand">
+
+        <img id="brand"  src="/assets/brand/brand.png" width="170" height="80">
+    </div>
+
+    <h2 class="text-center">Perfil</h2>
+    <br>
+        <tr *ngIf="profileNurse">
+
+        <div>
+            <label>Username</label>
+            <p *ngIf="profileNurse">{{profileNurse.username}}</p>
+            <label>Nombre</label>
+            <h1>{{profileNurse.firstname}}</h1>
+            <label>Apellido</label>
+            <h1>{{profileNurse.lastname}}</h1>
+            <label> Correo</label>
+            <h1>{{profileNurse.email}}</h1>
+            <label>Edad</label>
+            <h1>{{profileNurse.age}}</h1>
+            <label>Experience</label>
+            <h1>{{profileNurse.experience}}</h1>
+        </div>
+    
+        </tr>
+    <form [formGroup]="createRequestForm" (ngSubmit)="createService()" novalidate>
+        <br><br><br>
+        <h1 class="text-center">Descripcion</h1>
+        <input class="form-control" id="description" formControlName="description" type="text" size="40" maxlength="80" value="Describa aqui el servicio que requiere" name="Descripcion">
+        <br><br>
+        Fecha del servicio
+        <input type="date" id="dateService" formControlName="dateService" class="form-control" name="dateService">
+        <br><br><br>
+        <button type="submit" class="btn btn-success" >Solicitar Servicio</button>
+    </form>
+</div>
