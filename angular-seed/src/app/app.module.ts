@@ -38,7 +38,7 @@ import { ProfilePatient } from './pages/profile-patient/profile-patient.componen
 import { ProfileNurse } from './pages/profile-nurse/profile-nurse.component';
 import { RequestPageUsersComponent } from './pages/requests-page-users/request-page.users.component';
 import { RequestUsersService } from './services/request.users.service';
-
+import { EditPatientComponent } from './pages/profile-patient-edit/profile-patient-edit.component';
 
 
 const ROUTES = [
@@ -54,7 +54,9 @@ const ROUTES = [
   { path: 'home', component: HomePageComponent },
   { path: 'profilePatient', component: ProfilePatient },
   { path: 'profileNurse', component: ProfileNurse},
-  {path: '**', component: PageNotFoundComponent}
+  { path: 'editPatient', component: EditPatientComponent},
+  {path: '**', component: PageNotFoundComponent},
+
   ]
 
 @NgModule({
@@ -73,7 +75,8 @@ const ROUTES = [
     ProfilePatient,
     ProfileNurse,
     RequestViewPageComponent,
-   NursingPersonalByServiceComponent
+   NursingPersonalByServiceComponent,
+   EditPatientComponent
   ],
   imports: [
     BrowserModule,

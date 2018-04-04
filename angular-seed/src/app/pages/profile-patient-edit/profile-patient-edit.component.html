@@ -1,0 +1,37 @@
+<br>
+<br>
+<div class="container">
+    <br>
+    <div id="centerbrand">
+
+        <img id="brand"  src="/assets/brand/brand.png" width="170" height="80">
+    </div>
+
+    <h2 class="text-center">Perfil</h2>
+    <br>
+    <tr *ngIf="profilePatient">
+
+        <div>
+            <label><h4>Username:</h4> </label>
+            <p *ngIf="profilePatient">{{profilePatient.username}}</p>
+            <label> <h4>Nombre:</h4></label>
+            <input class="form-control input-sm" value="{{profilePatient.firstname}}"> <br>
+            <label><h4>Apellido:</h4></label>
+            <input class="form-control input-sm" value="{{profilePatient.lastname}}"> <br>
+            <label> <h4>Correo:</h4></label>
+            <input class="form-control input-sm" value="{{profilePatient.email}}"> <br>
+            <label><h4>Password:</h4></label>
+            <input class="form-control input-sm" type="password" value="{{profilePatient.password}}"> <br>
+            <label><h4>Edad:</h4></label>
+            <input class="form-control input-sm" value="{{profilePatient.age}}"> <br>
+            <label><h4>Numero tarjeta:</h4></label>
+            <input class="form-control input-sm" value="{{profilePatient.creditCardNumber}}"> <br>
+            <label><h4>CVV:</h4></label>
+            <input class="form-control input-sm" value="{{profilePatient.creditCVV}}"> <br>
+        </div>
+
+    </tr>
+
+    <a  routerLinkActive="/home" routerLink="/home"  class="btn btn-success btn-lg active btn-block " role="button" aria-pressed="true"> Save </a>
+
+</div>
