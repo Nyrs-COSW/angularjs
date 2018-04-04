@@ -49,6 +49,6 @@ constructor(
       return this.get(this.resourceNUrl+"/"+username);
     }
     profilePatientEdit(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:number, creditCardNumber:number, creditCVV: number) {
-        return this.post(this.resourceUrl,new Patient(username,firstname, lastname, image, email, password, age, creditCardNumber, creditCVV));
+        return this.post(this.resourceUrl+"/edit",new Patient(username,firstname, lastname, image, email, password, age, creditCardNumber, creditCVV));
     }
 }

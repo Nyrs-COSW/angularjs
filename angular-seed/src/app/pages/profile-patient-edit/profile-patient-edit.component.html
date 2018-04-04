@@ -9,29 +9,49 @@
 
     <h2 class="text-center">Perfil</h2>
     <br>
+        
+    
+    <form [formGroup]="editPatientForm" (ngSubmit)="editPatient()" novalidate>
     <tr *ngIf="profilePatient">
 
         <div>
+
+        <div class="form-group">
             <label><h4>Username:</h4> </label>
             <p *ngIf="profilePatient">{{profilePatient.username}}</p>
+        </div>
+        <div class="form-group">
             <label> <h4>Nombre:</h4></label>
-            <input class="form-control input-sm" value="{{profilePatient.firstname}}"> <br>
+            <input id="firstname" formControlName="firstname" class="form-control" value="{{profilePatient.firstname}}"> <br>
+        </div>
+        <div class="form-group">
             <label><h4>Apellido:</h4></label>
-            <input class="form-control input-sm" value="{{profilePatient.lastname}}"> <br>
+            <input id="lastname" formControlName="lastname" class="form-control" value="{{profilePatient.lastname}}"> <br>
+        </div>
+        <div class="form-group">
             <label> <h4>Correo:</h4></label>
-            <input class="form-control input-sm" value="{{profilePatient.email}}"> <br>
+            <input id="email" formControlName="email" class="form-control" value="{{profilePatient.email}}"> <br>
+        </div>
+        <div class="form-group">
             <label><h4>Password:</h4></label>
-            <input class="form-control input-sm" type="password" value="{{profilePatient.password}}"> <br>
+            <input id="password" formControlName="password"  class="form-control" type="password" value="{{profilePatient.password}}"> <br>
+        </div>
+        <div class="form-group">
             <label><h4>Edad:</h4></label>
-            <input class="form-control input-sm" value="{{profilePatient.age}}"> <br>
+            <input id="age" formControlName="age" class="form-control" value="{{profilePatient.age}}"> <br>
+        </div>
+        <div class="form-group">
             <label><h4>Numero tarjeta:</h4></label>
-            <input class="form-control input-sm" value="{{profilePatient.creditCardNumber}}"> <br>
+            <input id="creditCardNumber" formControlName="creditCardNumber" class="form-control" value="{{profilePatient.creditCardNumber}}"> <br>
+        </div>
+        <div class="form-group">
             <label><h4>CVV:</h4></label>
-            <input class="form-control input-sm" value="{{profilePatient.creditCVV}}"> <br>
+            <input id="creditCVV" formControlName="creditCVV" class="form-control" value="{{profilePatient.creditCVV}}"> <br>
+        </div>
         </div>
 
     </tr>
-
-    <a  routerLinkActive="/home" routerLink="/home"  class="btn btn-success btn-lg active btn-block " role="button" aria-pressed="true"> Save </a>
-
+    <button type="submit" class="btn btn-success" >Guardar</button>
+    </form>
+   
 </div>

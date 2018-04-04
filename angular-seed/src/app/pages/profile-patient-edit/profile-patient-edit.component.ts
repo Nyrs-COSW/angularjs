@@ -27,22 +27,93 @@ export class EditPatientComponent implements OnInit {
                 this.profilePatient= todosResponse;
 
         })
+
+        this.editPatientForm = this.formBuilder.group({
+            username: '',
+            firstname: '',
+            lastname: '',
+            image: '',
+            email: '',
+            password: '',
+            age: '',
+            creditCardNumber: '',
+            creditCVV:''
+        });
     }
 
+
+
     editPatient(){
-            this.userService.signUpPatient(
-                this.editPatientForm.get('username').value,
-                this.editPatientForm.get('firstname').value,
-                this.editPatientForm.get('lastname').value,
+            var firstname: string;
+            if(this.editPatientForm.get('firstname').value==""){
+                firstname = this.profilePatient.firstname;
+            }
+            else{
+                firstname = this.editPatientForm.get('firstname').value;
+            }
+
+            var lastname: string;
+            if(this.editPatientForm.get('lastname').value==""){
+                lastname = this.profilePatient.lastname;
+            }
+            else{
+                lastname = this.editPatientForm.get('lastname').value;
+            }
+
+            var email: string;
+            if(this.editPatientForm.get('email').value==""){
+                email = this.profilePatient.email;
+            }
+            else{
+                email = this.editPatientForm.get('email').value;
+            }
+
+
+            var password: string;
+            if(this.editPatientForm.get('password').value==""){
+                password = this.profilePatient.password;
+            }
+            else{
+                password = this.editPatientForm.get('password').value;
+            }
+
+            var age: number;
+            if(this.editPatientForm.get('age').value==""){
+                age = this.profilePatient.age;
+            }
+            else{
+                age = this.editPatientForm.get('age').value;
+            }
+
+            var creditCardNumber: number;
+            if(this.editPatientForm.get('creditCardNumber').value==""){
+                creditCardNumber = this.profilePatient.creditCardNumber;
+            }
+            else{
+                creditCardNumber = this.editPatientForm.get('creditCardNumber').value;
+            }
+
+            var creditCVV: number;
+            if(this.editPatientForm.get('creditCVV').value==""){
+                creditCVV = this.profilePatient.creditCVV;
+            }
+            else{
+                creditCVV = this.editPatientForm.get('creditCVV').value;
+            }
+
+            this.userService.profilePatientEdit(
+                sessionStorage.getItem("NowUser"),
+                firstname,
+                lastname,
                 this.editPatientForm.get('image').value,
-                this.editPatientForm.get('email').value,
-                this.editPatientForm.get('password').value,
-                this.editPatientForm.get('age').value,
-                this.editPatientForm.get('creditCardNumber').value,
-                this.editPatientForm.get('creditCVV').value
+                email,
+                password,
+                age,
+                creditCardNumber,
+                creditCVV
 
                 ).subscribe(response => {
-                    this.router.navigate(['']);
+                    this.router.navigate(['/profilePatient']);
                 }, error => {
                     console.log('Error Posting in: ' + (error && error.message ? error.message : ''));
                 })
