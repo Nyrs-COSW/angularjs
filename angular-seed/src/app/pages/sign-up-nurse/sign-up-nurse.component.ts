@@ -21,7 +21,10 @@ export class SignUpNurseComponent implements OnInit {
                 public router: Router,) {
 
     }
-
+    ngOnInit(){
+        
+    }
+    /*
     ngOnInit() {
         this.signUpNurseForm = this.formBuilder.group({
             username: '',
@@ -66,7 +69,7 @@ export class SignUpNurseComponent implements OnInit {
             })
 
     }
-
+*/
 
 }
 

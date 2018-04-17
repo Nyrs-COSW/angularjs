@@ -2,7 +2,8 @@ import{Component, OnInit}from '@angular/core';
 import {FormGroup, FormBuilder}from '@angular/forms';
 import {UsersService}from '../../services/users.service';
 import {Router}from '@angular/router';
-import { Patient } from '../../models/Patient';
+import { User } from '../../models/User';
+
 
 
 @Component({
@@ -12,7 +13,7 @@ import { Patient } from '../../models/Patient';
 })
 export class EditPatientComponent implements OnInit {
     public editPatientForm: FormGroup;
-    public profilePatient: Patient;
+    public profilePatient: User;
     public namePatient : string;
 
     constructor(public userService: UsersService,public formBuilder: FormBuilder,public router: Router,) {
@@ -36,8 +37,7 @@ export class EditPatientComponent implements OnInit {
             email: '',
             password: '',
             age: '',
-            creditCardNumber: '',
-            creditCVV:''
+
         });
     }
 
@@ -85,22 +85,6 @@ export class EditPatientComponent implements OnInit {
                 age = this.editPatientForm.get('age').value;
             }
 
-            var creditCardNumber: number;
-            if(this.editPatientForm.get('creditCardNumber').value==""){
-                creditCardNumber = this.profilePatient.creditCardNumber;
-            }
-            else{
-                creditCardNumber = this.editPatientForm.get('creditCardNumber').value;
-            }
-
-            var creditCVV: number;
-            if(this.editPatientForm.get('creditCVV').value==""){
-                creditCVV = this.profilePatient.creditCVV;
-            }
-            else{
-                creditCVV = this.editPatientForm.get('creditCVV').value;
-            }
-
             this.userService.profilePatientEdit(
                 sessionStorage.getItem("NowUser"),
                 firstname,
@@ -109,8 +93,7 @@ export class EditPatientComponent implements OnInit {
                 email,
                 password,
                 age,
-                creditCardNumber,
-                creditCVV
+                "patient"
 
                 ).subscribe(response => {
                     this.router.navigate(['/profilePatient']);

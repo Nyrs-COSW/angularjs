@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestService } from '../../services/request.service';
 import { Request } from '../../models/request';
-import { Nurse } from '../../models/Nurse';
 import {RequestViewPageComponent} from '.././request-view/request-view.component';
 import { Router } from '@angular/router';
 

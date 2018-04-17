@@ -2,8 +2,7 @@ import{Component, OnInit}from '@angular/core';
 import {FormGroup, FormBuilder}from '@angular/forms';
 import {UsersService}from '../../services/users.service';
 import {Router}from '@angular/router';
-import { Patient } from '../../models/Patient';
-import { Nurse } from '../../models/Nurse';
+import { User } from '../../models/User';
 
 
 @Component({
@@ -13,7 +12,7 @@ import { Nurse } from '../../models/Nurse';
 })
 export class ProfileNurse implements OnInit {
     public profileNurseForm: FormGroup;
-    public profileNurse: Nurse;
+    public profileNurse: User;
     public nameNurse : string;
 
     constructor(public userService: UsersService,public formBuilder: FormBuilder,public router: Router,) {

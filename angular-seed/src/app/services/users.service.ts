@@ -5,10 +5,9 @@ import {Http}from '@angular/http';
 import {APIService}from '.././common/api.service';
 import {AppConfiguration}from '.././common/config/app-configuration.service';
 import {AuthService}from '.././common/auth.service';
-import {Patient} from '.././models/Patient';
-import {Nurse} from '.././models/Nurse';
 import {Observable} from 'rxjs/Observable';
 import { Response } from '@angular/http/src/static_response';
+import { User } from '../models/User';
 
 @Injectable()
 export class UsersService extends APIService {
@@ -34,24 +33,26 @@ constructor(
     });
   }
 
-    signUpPatient(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:number, creditCardNumber:number, creditCVV: number) {
-    return this.post(this.resourceUrl,new Patient(username,firstname, lastname, image, email, password, age, creditCardNumber, creditCVV));
+    signUpPatient(username:string,firstname: string, lastname: string, image: string, email:string,password:string, 
+                   age:number,role:string) {
+    return this.post(this.resourceUrl,new User(username,firstname, lastname, image, email, password, age, role));
     }
 
-    signUpNurse(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:string, experience:string, years: string) {
-    return this.post(this.resourceNUrl,new Nurse(username,firstname, lastname, image, email, password, age, experience, years));
+   /* signUpNurse(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:string, experience:string, years: string) {
+    return this.post(this.resourceNUrl,new User(username,firstname, lastname, image, email, password, age, experience, years));
     }
-
-    profilePatient(username:string):Observable<Patient>{
+*/
+    profilePatient(username:string):Observable<User>{
         return this.get(this.resourceUrl+"/"+username);
     }
-    profileNurse(username:string):Observable<Nurse>{
+    profileNurse(username:string):Observable<User>{
       return this.get(this.resourceNUrl+"/"+username);
     }
-    profilePatientEdit(username:string,firstname: string, lastname: string, image: string, email:string,password:string, age:number, creditCardNumber:number, creditCVV: number) {
-        return this.post(this.resourceUrl+"/edit",new Patient(username,firstname, lastname, image, email, password, age, creditCardNumber, creditCVV));
+    profilePatientEdit(username:string,firstname: string, lastname: string, image: string, email:string,password:string,
+                       age:number,role:string) {
+        return this.post(this.resourceUrl+"/edit",new User(username,firstname, lastname, image, email, password, age,role));
     }
-    profileNurseEdit(username:string,firstname: string, lastname: string, image: string, email:string,password:string,age:string,experience:string,years:string) {
-            return this.post(this.resourceNUrl+"/edit",new Nurse(username,firstname, lastname, image, email, password, age, experience, years));
-        }
+    /*profileNurseEdit(username:string,firstname: string, lastname: string, image: string, email:string,password:string,age:string,experience:string,years:string) {
+            return this.post(this.resourceNUrl+"/edit",new User(username,firstname, lastname, image, email, password, age, experience, years));
+        }*/
 }

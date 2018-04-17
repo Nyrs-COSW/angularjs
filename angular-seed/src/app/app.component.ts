@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from './common/auth.service';
 import { UsersService } from './services/users.service';
-import { Patient } from './models/Patient';
 import { error } from 'util';
 
 @Component({

@@ -2,7 +2,8 @@ import{Component, OnInit}from '@angular/core';
 import {FormGroup, FormBuilder}from '@angular/forms';
 import {UsersService}from '../../services/users.service';
 import {Router}from '@angular/router';
-import { Nurse } from '../../models/Nurse';
+import { User } from '../../models/User';
+
 
 
 @Component({
@@ -12,7 +13,7 @@ import { Nurse } from '../../models/Nurse';
 })
 export class EditNurseComponent implements OnInit {
     public editNurseForm: FormGroup;
-    public profileNurse: Nurse;
+    public profileNurse: User;
     public nameNurse : string;
 
     constructor(public userService: UsersService,public formBuilder: FormBuilder,public router: Router,) {
@@ -40,7 +41,7 @@ export class EditNurseComponent implements OnInit {
         });
     }
 
-
+/*
 
     editNurse(){
             var firstname: string;
@@ -118,4 +119,5 @@ export class EditNurseComponent implements OnInit {
                 })
 
     }
+    */
 }

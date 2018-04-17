@@ -20,10 +20,6 @@
             <input type="password" class="form-control" id="alterEgo" formControlName="password">
         </div>
             <button type="submit" class="btn btn-success" [disabled]="!signInForm.valid">Ingresa</button>
-        <p>
-             <input type="radio"  formControlName="role" value="patient" />Paciente<br/>
-             <input type="radio"  formControlName="role" value="nurse"/>Enfermero
-        </p>
             <p class="text-danger mt-1" *ngIf="loginError">{{loginError}}</p>
     </form>
 </div>

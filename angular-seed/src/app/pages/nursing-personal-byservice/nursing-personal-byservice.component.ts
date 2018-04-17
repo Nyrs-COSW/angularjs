@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NursingservicesService } from '../../services/nursingservices.service';
-import { Nurse } from '../../models/Nurse';
 import {Router}from '@angular/router';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-nursing-personal-byservice',
@@ -10,7 +10,7 @@ import {Router}from '@angular/router';
 })
 export class NursingPersonalByServiceComponent implements OnInit {
 
-    private nursingpersonaltlist: Nurse[] = [];
+    private nursingpersonaltlist: User[] = [];
 
    constructor(public nursingservicesService: NursingservicesService, public router: Router) { }
 

@@ -27,9 +27,8 @@ export class SignUpPatientComponent implements OnInit {
             image: '',
             email: '',
             password: '',
-            age: '',
-            creditCardNumber: '',
-            creditCVV:''
+            age: ''
+
         });
 
     }
@@ -43,8 +42,8 @@ export class SignUpPatientComponent implements OnInit {
             this.signUpPatientForm.get('email').value,
             this.signUpPatientForm.get('password').value,
             this.signUpPatientForm.get('age').value,
-            this.signUpPatientForm.get('creditCardNumber').value,
-            this.signUpPatientForm.get('creditCVV').value
+            "patient"
+
 
             ).subscribe(response => {
                 this.router.navigate(['']);

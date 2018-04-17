@@ -5,7 +5,8 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { AuthService } from '../common/auth.service';
 import { AppConfiguration } from '../common/config/app-configuration.service';
 import {Observable} from 'rxjs/Observable';
-import { Nurse } from '../models/Nurse';
+import { User } from '../models/User';
+
 
 
 @Injectable()
@@ -30,7 +31,7 @@ list(): Observable<Nursingservices[]> {
     return this.get(this.resourceUrl);
   }
 
-nursingPersonalList(service: string):  Observable<Nurse[]> {
+nursingPersonalList(service: string):  Observable<User[]> {
     return this.get(this.resourceNurseUrl+"/"+service);
   }
 
